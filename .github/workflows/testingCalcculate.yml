@@ -15,4 +15,4 @@ jobs:
       - name: Compile calculator.java
         run: javac Calculator.java # replace with the command to compile your java file
       - name: Run CalculatorTest.java
-        run: java -jar junit-platform-console-standalone-1.6.2.jar --class-path  ~/CalculatorTest.java # replace with the command to run your test file using JUnit
+        run: java -jar junit-platform-console-standalone-1.6.2.jar --class-path  ~/out/production/Calculator/org/CalculatorTest.java # replace with the command to run your test file using JUnit
