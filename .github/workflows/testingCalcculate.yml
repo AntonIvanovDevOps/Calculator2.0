@@ -11,9 +11,9 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v1
         with:
-          java-version: '11' # replace with the version of Java you want to use
+          java-version: '18' 
       - name: Compile calculator.java
-        run: javac Calculator.java # replace with the command to compile your java file
+        run: javac Calculator.java 
       - name: Run CalculatorTest.java
-        #run: javac CalculatorTest.java # replace with the command to run your test file using JUnit
-        run: java -jar junit-platform-console-standalone-1.6.2.jar
+        run: javac CalculatorTest.java 
+        #run: java -jar junit-platform-console-standalone-1.6.2.jar
