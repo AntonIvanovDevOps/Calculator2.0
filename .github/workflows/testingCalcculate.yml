@@ -16,4 +16,4 @@ jobs:
         run: javac Calculator.java # replace with the command to compile your java file
       - name: Run CalculatorTest.java
         #run: javac CalculatorTest.java # replace with the command to run your test file using JUnit
-        run: java -jar junit-platform-console-standalone-1.6.2.jar '~/out/production/Homework3/org/example/'
+        run: java -jar junit-platform-console-standalone-1.6.2.jar
