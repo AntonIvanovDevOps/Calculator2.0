@@ -12,8 +12,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '18' 
-      - name: Compile calculator.java
-        run: javac Calculator.java 
+      - name: Create target
+        run: mkdir target
+      - name: Compile tesing class
+        run: javac -d target -cp target: Calculator.java
+      - name: Compile test class
+        run: javac -d target -cp target: CalculatorTest.java
       - name: Run CalculatorTest.java
-        run: javac CalculatorTest.java 
+        run: java -jar junit-platform-console-standalone-1.7.2.jar --class-path target --select-class CalculatorTest
         #run: java -jar junit-platform-console-standalone-1.6.2.jar
