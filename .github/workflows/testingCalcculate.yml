@@ -16,6 +16,6 @@ jobs:
         run: javac Calculator.java 
       - name: Run CalculatorTest.java
         #run: javac CalculatorTest.java 
-        run: java -jar junit-platform-console-standalone-1.7.2.jar --class-path  --select-class org.example.Calculator.java
+        run: java -jar junit-platform-console-standalone-1.7.2.jar --class-path  --select-class org.example.CalculatorTest.java
 
 
